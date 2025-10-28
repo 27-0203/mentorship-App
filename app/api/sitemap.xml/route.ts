@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+// app/api/sitemap.xml/route.ts
+import { NextResponse } from 'next/server';
+
+export async function GET() {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mentorship-app-one.vercel.app/</loc>
@@ -12,4 +16,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-</urlset>
+  <!-- Add more pages as needed -->
+</urlset>`;
+
+  return new NextResponse(sitemap, {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/xml',
+      'Cache-Control': 'public, max-age=86400', // 24 hours
+    },
+  });
+}
