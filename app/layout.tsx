@@ -3,10 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const geist = Geist({ subsets: ["latin"] });
+const geistMono = Geist_Mono({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Student Mentorship System | Connect Students & Mentors",
   description:
     "An online mentorship platform that connects students with experienced mentors to guide academic and career growth.",
@@ -33,6 +33,15 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+  // Add verification here
+  verification: {
+    google: "ad5qznyVDSEjswNbs-W-wXgG2EAtYvnEM5-V-qBf4m0",
+  },
+  // Optional: Add other meta tags
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -42,7 +51,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <head>
+        {/* Google Search Console Verification */}
+        <meta
+          name="google-site-verification"
+          content="ad5qznyVDSEjswNbs-W-wXgG2EAtYvnEM5-V-qBf4m0"
+        />
+      </head>
+      <body className={`${geist.className} antialiased`}>
         {children}
         <Analytics />
       </body>
