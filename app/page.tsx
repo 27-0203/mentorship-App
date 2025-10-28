@@ -12,12 +12,13 @@ export default function HomePage() {
           <h1 className="mb-6 text-5xl font-bold text-gray-900 dark:text-white md:text-6xl">
             Welcome to{" "}
             <span className="text-blue-600 dark:text-blue-400">
-              Student Affairs
+              Student Mentorship System
             </span>
           </h1>
           <p className="mx-auto mb-8 max-w-2xl text-xl text-gray-600 dark:text-gray-300">
-            Connect with experienced mentors or share your expertise. Build
-            meaningful relationships and accelerate your learning journey.
+            Our mentorship platform connects students with mentors who guide
+            them through academic, career, and personal development. Join now to
+            start your mentorship journey!
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Button asChild size="lg" className="text-lg">
