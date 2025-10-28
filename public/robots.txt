@@ -1,9 +1,5 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://mentorship-app-one.vercel.app
-
-# Sitemaps
+# Sitemap location
 Sitemap: https://mentorship-app-one.vercel.app/sitemap.xml
