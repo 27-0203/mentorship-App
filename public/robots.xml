@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mentorship-app-one.vercel.app/sitemap.xml
