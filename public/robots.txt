@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://yourwebsite.com
+Host: https://mentorship-app-one.vercel.app/
 
 # Sitemaps
-Sitemap: https://yourwebsite.com/sitemap.xml
+Sitemap: https://mentorship-app-one.vercel.app/sitemap.xml
