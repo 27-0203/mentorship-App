@@ -44,7 +44,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen w-full items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-6 dark:from-gray-900 dark:to-gray-800">
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">MentorConnect</h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Student Affairs</h1>
           <p className="mt-2 text-gray-600 dark:text-gray-400">Welcome back to your learning journey</p>
         </div>
         <Card>
